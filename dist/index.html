@@ -11,6 +11,7 @@
     <h1>Learn Vue3</h1>
     <div id="app" class="app">
       <p>{{msg}}</p>
+      <a v-bind:href="link">link</a>
       <label for="goal">Goal</label>
       <input type="text" id="goal" v-model="enteredValue">
       <button v-on:click="addGoal">Add Goal</button>

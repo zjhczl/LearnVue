@@ -3,6 +3,7 @@ Vue.createApp({
     goals: [],
     enteredValue: "zj",
     msg: "dasdasdasdasda",
+    link: "https://www.baidu.com",
   }),
   methods: {
     addGoal() {

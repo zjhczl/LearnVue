@@ -2,7 +2,8 @@ Vue.createApp({
     data: ()=>({
             goals: [],
             enteredValue: "zj",
-            msg: "dasdasdasdasda"
+            msg: "dasdasdasdasda",
+            link: "https://www.baidu.com"
         }),
     methods: {
         addGoal () {
