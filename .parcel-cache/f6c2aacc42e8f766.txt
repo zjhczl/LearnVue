@@ -1,17 +1,17 @@
 4603
 52/opt/lampp/htdocs/LearnVue/dist/LearnVue.3464ddca.js1663919948908177396 0
-53/opt/lampp/htdocs/LearnVue/dist/index.672d4772.js.map1663920595312211917 0
-49/opt/lampp/htdocs/LearnVue/dist/index.672d4772.js1663920595312211917 0
+53/opt/lampp/htdocs/LearnVue/dist/index.672d4772.js.map1663926961220551893 0
+49/opt/lampp/htdocs/LearnVue/dist/index.672d4772.js1663926961216551893 0
 56/opt/lampp/htdocs/LearnVue/dist/LearnVue.3464ddca.js.map1663919948912177396 0
-54/opt/lampp/htdocs/LearnVue/dist/index.3a01df49.css.map1663919948896177395 0
-31/opt/lampp/htdocs/LearnVue/dist1663920595312211917 1
-36/opt/lampp/htdocs/LearnVue/script.js1663920595248211914 0
+54/opt/lampp/htdocs/LearnVue/dist/index.3a01df49.css.map1663926989812553420 0
+31/opt/lampp/htdocs/LearnVue/dist1663926989812553420 1
+36/opt/lampp/htdocs/LearnVue/script.js1663925777088488654 0
 36/opt/lampp/htdocs/LearnVue/README.md1663914571947890235 0
-39/opt/lampp/htdocs/LearnVue/package.json1663918337284091326 0
+39/opt/lampp/htdocs/LearnVue/package.json1663926945580551058 0
 37/opt/lampp/htdocs/LearnVue/.gitignore1663915998555966424 0
 44/opt/lampp/htdocs/LearnVue/package-lock.json1663918337280091325 0
 70/opt/lampp/htdocs/LearnVue/node_modules/css-what/lib/commonjs/types.js1663915914707961946 0
-37/opt/lampp/htdocs/LearnVue/index.html1663920532088208541 0
+37/opt/lampp/htdocs/LearnVue/index.html1663925720036485607 0
 70/opt/lampp/htdocs/LearnVue/node_modules/css-what/lib/commonjs/index.js1663915914651961943 0
 76/opt/lampp/htdocs/LearnVue/node_modules/css-what/lib/commonjs/types.d.ts.map1663915914727961947 0
 76/opt/lampp/htdocs/LearnVue/node_modules/css-what/lib/commonjs/index.d.ts.map1663915914715961946 0
@@ -131,7 +131,7 @@
 57/opt/lampp/htdocs/LearnVue/node_modules/terser/PATRONS.md1663915914831961953 0
 63/opt/lampp/htdocs/LearnVue/node_modules/terser/lib/sourcemap.js1663915914827961952 0
 58/opt/lampp/htdocs/LearnVue/node_modules/terser/lib/size.js1663915914827961952 0
-50/opt/lampp/htdocs/LearnVue/dist/index.3a01df49.css1663919948892177395 0
+50/opt/lampp/htdocs/LearnVue/dist/index.3a01df49.css1663926989812553420 0
 67/opt/lampp/htdocs/LearnVue/node_modules/terser/lib/equivalent-to.js1663915914791961950 0
 59/opt/lampp/htdocs/LearnVue/node_modules/terser/lib/scope.js1663915914827961952 0
 60/opt/lampp/htdocs/LearnVue/node_modules/terser/lib/minify.js1663915914815961952 0
@@ -233,7 +233,7 @@
 102/opt/lampp/htdocs/LearnVue/node_modules/abortcontroller-polyfill/dist/abortcontroller-polyfill-only.js1663915914663961944 0
 80/opt/lampp/htdocs/LearnVue/node_modules/abortcontroller-polyfill/src/polyfill.js1663915914711961946 0
 80/opt/lampp/htdocs/LearnVue/node_modules/abortcontroller-polyfill/src/ponyfill.js1663915914711961946 0
-40/opt/lampp/htdocs/LearnVue/style.css.map1663919618936159773 0
+40/opt/lampp/htdocs/LearnVue/style.css.map1663926989712553415 0
 77/opt/lampp/htdocs/LearnVue/node_modules/abortcontroller-polyfill/src/utils.js1663915914719961947 0
 64/opt/lampp/htdocs/LearnVue/node_modules/abortcontroller-polyfill1663915914723961947 1
 52/opt/lampp/htdocs/LearnVue/node_modules/import-fresh1663915914651961943 1
@@ -2420,7 +2420,7 @@
 73/opt/lampp/htdocs/LearnVue/node_modules/lmdb/dependencies/lz4/lib/LICENSE1663915914731961947 0
 62/opt/lampp/htdocs/LearnVue/node_modules/htmlnano/.eslintignore1663915914583961939 0
 69/opt/lampp/htdocs/LearnVue/node_modules/@parcel/utils/src/debounce.js1663915914715961946 0
-37/opt/lampp/htdocs/LearnVue/style.scss1663919618904159771 0
+37/opt/lampp/htdocs/LearnVue/style.scss1663926989660553412 0
 84/opt/lampp/htdocs/LearnVue/node_modules/@parcel/transformer-postcss/lib/constants.js1663915914647961943 0
 72/opt/lampp/htdocs/LearnVue/node_modules/css-tree/lib/generator/create.js1663915914747961948 0
 91/opt/lampp/htdocs/LearnVue/node_modules/@swc/helpers/lib/_class_extract_field_descriptor.js1663915914715961946 0
@@ -2655,7 +2655,7 @@
 77/opt/lampp/htdocs/LearnVue/node_modules/@parcel/transformer-svg/src/inline.js1663915914679961944 0
 59/opt/lampp/htdocs/LearnVue/node_modules/@lezer/lr/README.md1663915914699961946 0
 68/opt/lampp/htdocs/LearnVue/node_modules/css-tree/lib/lexer/search.js1663915914843961953 0
-36/opt/lampp/htdocs/LearnVue/style.css1663919618936159773 0
+36/opt/lampp/htdocs/LearnVue/style.css1663926989712553415 0
 84/opt/lampp/htdocs/LearnVue/node_modules/@parcel/workers/lib/process/ProcessWorker.js1663915914743961948 0
 65/opt/lampp/htdocs/LearnVue/node_modules/node-addon-api/napi-inl.h1663915914711961946 0
 86/opt/lampp/htdocs/LearnVue/node_modules/caniuse-lite/data/features/css-text-justify.js1663915914863961954 0
@@ -2867,7 +2867,7 @@
 85/opt/lampp/htdocs/LearnVue/node_modules/@swc/helpers/lib/_class_private_method_set.js1663915914735961947 0
 99/opt/lampp/htdocs/LearnVue/node_modules/@parcel/node-resolver-core/test/fixture/node_modules/@scope1663915914687961945 1
 74/opt/lampp/htdocs/LearnVue/node_modules/caniuse-lite/data/features/cors.js1663915914835961953 0
-42/opt/lampp/htdocs/LearnVue/dist/index.html1663920532156208544 0
+42/opt/lampp/htdocs/LearnVue/dist/index.html1663926961212551893 0
 71/opt/lampp/htdocs/LearnVue/node_modules/caniuse-lite/data/regions/EG.js1663915914875961955 0
 85/opt/lampp/htdocs/LearnVue/node_modules/csso/lib/restructure/2-initialMergeRuleset.js1663915914655961943 0
 66/opt/lampp/htdocs/LearnVue/node_modules/picocolors/picocolors.d.ts1663915914663961944 0
