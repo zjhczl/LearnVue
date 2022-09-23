@@ -1,0 +1,6 @@
+echo "---add---"
+git add .
+echo "---commmit---"
+git commit -m "commit"
+echo "---push---"
+git push origin
