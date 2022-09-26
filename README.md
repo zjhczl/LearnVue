@@ -55,6 +55,8 @@ new Vue({
 
 ```
 
+网址：https://element.eleme.cn/#/zh-CN/component/quickstart
+
 ### 使用 sass
 
 #### 安装 sass
@@ -210,3 +212,24 @@ export default {
 </style>
 
 ```
+
+路由懒加载
+src/router/index.js
+
+```shell
+import Vue from "vue";
+import Router from "vue-router";
+Vue.use(Router);
+export default new Router({
+  routes: [
+    {
+      path: "/",
+      component: () => import("@/components/Home"),
+    },
+  ],
+  mode: "history",
+});
+
+```
+
+### login 页面
