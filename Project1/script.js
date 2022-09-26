@@ -1,3 +1,4 @@
+// import "vue";
 Vue.createApp({
   data: () => ({
     goals: [],

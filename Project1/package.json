@@ -19,8 +19,7 @@
   },
   "homepage": "https://github.com/zjhczl/LearnVue#readme",
   "dependencies": {
-    "parcel": "^2.7.0",
-    "vue": "^3.2.39"
+    "parcel": "^2.7.0"
   },
   "devDependencies": {
     "sass": "^1.55.0"
