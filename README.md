@@ -232,5 +232,129 @@ export default new Router({
 
 ```
 
-### login 页面
-需要重新在router里配置路由
+### 其他页面
+
+需要重新在 router 里配置路由
+
+### echarts
+
+#### npm 安装 echarts
+
+```
+npm install -D echarts@4
+```
+
+#### main.js 挂载 echarts
+
+```shell
+import Vue from "vue";
+import App from "./App.vue";
+import ElementUI from "element-ui";
+import "element-ui/lib/theme-chalk/index.css";
+import "font-awesome/css/font-awesome.min.css";
+import axios from "axios";
+import router from "./router";
+import echarts from "echarts";#
+Vue.prototype.$echarts = echarts;#
+Vue.prototype.axios = axios;
+Vue.use(ElementUI);
+Vue.config.productionTip = false;
+
+new Vue({
+  router,
+  render: (h) => h(App),
+}).$mount("#app");
+
+```
+
+#### 使用 echarts
+
+src/components/echarts/MapView.vue
+
+```
+<template>
+  <div class="data-view">
+    <el-card>
+      <div id="main"></div>
+    </el-card>
+  </div>
+</template>
+<style lang="scss">
+.data-view {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  .el-card {
+    width: 100%;
+
+    #main {
+      height: 50rem;
+    }
+  }
+}
+</style>
+<script>
+export default {
+  data() {
+    return {};
+  },
+  mounted() {
+    //初始化echarts实例
+    let myChart = this.$echarts.init(document.getElementById("main"));
+
+    myChart.setOption({
+      title: {
+        text: "chart1",
+      },
+      toolotip: {},
+      xAxis: {
+        data: ["一", "二", "三", "四", "五"],
+      },
+      yAxis: {},
+      series: [
+        {
+          name: "人数",
+          type: "bar",
+          data: [99, 34, 75, 46, 56],
+        },
+      ],
+    });
+  },
+};
+</script>
+
+```
+
+### 路由导航守卫
+
+main.js
+
+```
+import Vue from "vue";
+import App from "./App.vue";
+import ElementUI from "element-ui";
+import "element-ui/lib/theme-chalk/index.css";
+import "font-awesome/css/font-awesome.min.css";
+import axios from "axios";
+import router from "./router";
+import echarts from "echarts";
+Vue.prototype.$echarts = echarts;
+Vue.prototype.axios = axios;
+Vue.use(ElementUI);
+Vue.config.productionTip = false;
+
+router.beforeEach((to, from, next) => {
+  console.log(to.path);
+  //if里面设置条件
+  if (to.path == "/zj") {
+    next("/login");
+  }
+  next();
+});
+
+new Vue({
+  router,
+  render: (h) => h(App),
+}).$mount("#app");
+
+```

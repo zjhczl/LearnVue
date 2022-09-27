@@ -46,6 +46,27 @@ export default new Router({
         },
       ],
     },
+    {
+      path: "/home",
+      name: "视图管理",
+      redirect: "/home/students",
+      iconClass: "fa fa-users",
+      component: () => import("@/components/Home"),
+      children: [
+        {
+          path: "/home/dataview",
+          name: "数据展示",
+          iconClass: "fa fa-th-list",
+          component: () => import("@/components/echarts/DataView.vue"),
+        },
+        {
+          path: "/home/mapview",
+          name: "地图展示",
+          iconClass: "fa fa-th-list",
+          component: () => import("@/components/echarts/MapView.vue"),
+        },
+      ],
+    },
   ],
   mode: "history",
 });
