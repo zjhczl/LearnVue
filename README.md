@@ -393,4 +393,8 @@ Vue CLI v5.0.8
 ? Save this as a preset for future projects? No
 ```
 
-####
+#### 安装其他依赖
+
+```
+npm install element-ui font-awesome axios echarts@4 -S
+```
