@@ -30,7 +30,10 @@ export default {
   },
   methods: {
     login(form) {
-      alert(form.username);
+      console.log(form.username,form.password);
+      console.log(this.form);
+      // this.axios.post("",this.form)
+      this.$router.push('./home');
     },
   },
 };

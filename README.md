@@ -233,3 +233,4 @@ export default new Router({
 ```
 
 ### login 页面
+需要重新在router里配置路由
