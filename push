@@ -1,6 +1,6 @@
 echo "---add---"
 git add .
 echo "---commmit---"
-git commit -m "完成TS重构"
+git commit -m "commit"
 echo "---push---"
 git push

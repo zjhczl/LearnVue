@@ -398,3 +398,73 @@ Vue CLI v5.0.8
 ```
 npm install element-ui font-awesome axios echarts@4 -S
 ```
+
+### Vue3 重构项目
+
+```
+npx vue create v3
+```
+
+#### 安装其他依赖
+
+```
+npm install element-plus axios sass-loader node-sass vue-router@4 font-awesome echarts@4 -S
+```
+
+element-plus:https://element-plus.gitee.io/zh-CN/component/button.html
+
+#### 配置 router
+
+src/router/index.js
+
+```
+import { createRouter } from "vue-router";
+import { createWebHistory } from "vue-router";
+import Home from "@/components/Home";
+
+const routes = [
+  {
+    path: "/",
+    name: "home",
+    component: Home,
+  },
+];
+const router = createRouter({
+  history: createWebHistory(),
+  routes,
+});
+export default router;
+
+```
+
+在 main.js 引入 router
+
+```shell
+import { createApp } from "vue";
+import App from "./App.vue";
+import router from "@/router/index";
+// createApp(App).mount('#app')
+createApp(App).use(router).mount("#app");
+
+```
+
+在 main.js 引入其他依赖
+
+```shell
+import { createApp } from "vue";
+import App from "./App.vue";
+import router from "@/router/index";
+//ElementPlu
+import ElementPlus from "element-plus";
+import "element-plus/dist/index.css";
+import locale from "element-plus/es/locale/lang//zh-cn";
+//axios
+import axios from "axios";
+
+const app = createApp(App);
+app.config.globalProperties.$https = axios;
+app.use(router);
+app.use(ElementPlus, { locale });
+app.mount("#app");
+
+```
