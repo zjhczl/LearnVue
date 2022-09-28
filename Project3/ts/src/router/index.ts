@@ -1,29 +1,73 @@
 import Vue from "vue";
-import VueRouter, { RouteConfig } from "vue-router";
-import HomeView from "../views/HomeView.vue";
+//import VueRouter, { RouteConfig } from "vue-router";
+//import HomeView from "../views/HomeView.vue";
+import Router from "vue-router";
+Vue.use(Router);
 
-Vue.use(VueRouter);
-
-const routes: Array<RouteConfig> = [
+const routes: Array<any> = [
   {
     path: "/",
-    name: "home",
-    component: HomeView,
+    redirect: "/login",
+    hidden: true,
+    component: () => import("@/components/Login.vue"),
   },
   {
-    path: "/about",
-    name: "about",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/AboutView.vue"),
+    path: "/login",
+    hidden: true,
+    component: () => import("@/components/Login.vue"),
+  },
+  {
+    path: "*",
+    name: "NotFound",
+    hidden: true,
+    component: () => import("@/components/NotFound.vue"),
+  },
+  {
+    path: "/home",
+    name: "学生管理",
+    redirect: "/home/students",
+    iconClass: "fa fa-users",
+    component: () => import("@/components/Home.vue"),
+    children: [
+      {
+        path: "/home/students",
+        name: "学生列表",
+        iconClass: "fa fa-list",
+        component: () => import("@/components/students/StudentsList.vue"),
+      },
+      {
+        path: "/home/work",
+        name: "学生作业",
+        iconClass: "fa fa-th-list",
+        component: () => import("@/components/students/WorkList.vue"),
+      },
+    ],
+  },
+  {
+    path: "/home",
+    name: "视图管理",
+    redirect: "/home/students",
+    iconClass: "fa fa-users",
+    component: () => import("@/components/Home.vue"),
+    children: [
+      {
+        path: "/home/dataview",
+        name: "数据展示",
+        iconClass: "fa fa-th-list",
+        component: () => import("@/components/echarts/DataView.vue"),
+      },
+      {
+        path: "/home/mapview",
+        name: "地图展示",
+        iconClass: "fa fa-th-list",
+        component: () => import("@/components/echarts/MapView.vue"),
+      },
+    ],
   },
 ];
 
-const router = new VueRouter({
+const router = new Router({
   mode: "history",
-  base: process.env.BASE_URL,
   routes,
 });
 
