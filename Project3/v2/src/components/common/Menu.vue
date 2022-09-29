@@ -7,8 +7,8 @@
       @open="handleOpen"
       @close="handleClose"
     >
-      <template v-for="(item, index) in menus">
-        <el-submenu :key="index" v-if="!item.hidden">
+      <template v-for="item in menus">
+        <el-submenu :key="item.name" v-if="!item.hidden">
           <template slot="title">
             <i :class="item.iconClass"></i>&
             <span>{{ item.name }}</span>
