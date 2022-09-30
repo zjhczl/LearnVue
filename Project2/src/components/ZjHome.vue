@@ -1,11 +1,10 @@
 <template>
   <section>
-    <!-- <h1>{{ title }}</h1> -->
-    <!-- <msg-input @get-msg="getMsg"></msg-input>
+    <h1>{{ title }}</h1>
+    <msg-input @get-msg="getMsg"></msg-input>
 
     <hello-world :msg="data" :msg2="msg" @e-zj="getAlter"></hello-world>
-    <input type="text" v-model="msg" /> -->
-    <router-view></router-view>
+    <input type="text" v-model="msg" />
   </section>
 </template>
 

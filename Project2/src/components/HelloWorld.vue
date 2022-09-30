@@ -1,43 +1,53 @@
-<script setup>
-defineProps({
-  msg: {
-    type: String,
-    required: true
-  }
-})
-</script>
-
 <template>
-  <div class="greetings">
-    <h1 class="green">{{ msg }}</h1>
-    <h3>
-      You’ve successfully created a project with
-      <a href="https://vitejs.dev/" target="_blank" rel="noopener">Vite</a> +
-      <a href="https://vuejs.org/" target="_blank" rel="noopener">Vue 3</a>.
-    </h3>
+  <div class="hello">
+    <h1 @click="getClick">{{ msg }}</h1>
+    <h1>{{ msg2 }}</h1>
   </div>
 </template>
 
+<script>
+export default {
+  // props: ["msg"],
+  props: {
+    // msg: String,
+
+    msg: {
+      type: String,
+      required: true,
+      //只是在控制台给提示
+      validator: function (value) {
+        if (value == "hello world2") return false;
+        return true;
+      },
+    },
+    msg2: {
+      type: String,
+      default: "jjjjjjjjj",
+    },
+  },
+  methods: {
+    getClick() {
+      //第一个参数是事件名，以后的参数是数据
+      this.$emit("e-zj", this.msg2);
+    },
+  },
+};
+</script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1 {
-  font-weight: 500;
-  font-size: 2.6rem;
-  top: -10px;
-}
-
 h3 {
-  font-size: 1.2rem;
+  margin: 40px 0 0;
 }
-
-.greetings h1,
-.greetings h3 {
-  text-align: center;
+ul {
+  list-style-type: none;
+  padding: 0;
 }
-
-@media (min-width: 1024px) {
-  .greetings h1,
-  .greetings h3 {
-    text-align: left;
-  }
+li {
+  display: inline-block;
+  margin: 0 10px;
+}
+a {
+  color: #42b983;
 }
 </style>
